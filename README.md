@@ -30,12 +30,15 @@ evenly split by the labels `0` for non-sarcastic and `1` for sarcastic. The labe
 - looking for patterns and relationships in data
 - isolating sections related to our target variable
 
-## Feature Engineering
-- transforming and refactoring data based off of given relationships in effort to fit model
+## Preprocessing
+#### Fitting and transforming text data using:
+- Count Vectorizer
+- TF IDF
+- Wod2Vec
+- some variation of BERT
 
 ## Modeling
-**TO DO**
-- TF IDF
-- KNN
-- Text Embedding
+- Logistic Regression using all of the Vectorizers above
+- Naive Bayes using TFIDF
+- KNN using TFIDF 
 
