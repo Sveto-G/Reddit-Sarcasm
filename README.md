@@ -1,5 +1,11 @@
 # Project Overview
-This project strives to utilize machine learning to predict the occurence of sarcasm in a given text. In doing so it will allow users to know whether a given input is genuine or misleading. 
+  Text Comprehension, Question and Answering, Generative Text and Sentiment Analysis have all made grade strides throughout the past decade - and progress is only accelerating. Does there exist, though, a model which can predict `sarcasm`? The difficulty in doing so is that we may not be able to do so with current methods as the type and amount of context that is necessary is not accounted for. There are two key indicators of sarcasm:
+  
+1) A shared knowledge between the speaker/writer and listener/reader
+   i) eg. It's -30 degrees and windy -> "Beautiful day today, isn't it?"
+3) The speaker/writer's intent
+   
+  We may or may not be able to access this shared knowledge, but maybe through NLP techniques we may infer the writer's intent. This project strives to utilize machine learning and neural networks to predict the occurence of sarcasm in a given text. In doing so it will allow users to know whether a given input is genuine or misleading. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -22,23 +28,30 @@ evenly split by the labels `0` for non-sarcastic and `1` for sarcastic. The labe
 # Project Workflow
 
 ## Data Cleaning
-- searching for duplicates, null values
-- converting data to appropriate datatype
-- eliminating redundancies
+- searched for and removing negligible amount of duplicates and null values
+- converted data to appropriate datatype
+- eliminated redundancies
 
 ## EDA
-- looking for patterns and relationships in data
-- isolating sections related to our target variable
+- looked for patterns and relationships in data
+- isolated sections related to our target variable
+- found words associated with sarcasm
 
 ## Preprocessing
 #### Fitting and transforming text data using:
 - Count Vectorizer
 - TF IDF
 - Wod2Vec
-- some variation of BERT
+
+TODO**
+some variation of BERT
 
 ## Modeling
-- Logistic Regression using all of the Vectorizers above
-- Naive Bayes using TFIDF
-- KNN using TFIDF 
+- Logistic Regression Count Vectorizer and TFIDF
+- KNN using TFIDF
+- MLP using Word2Vec
+
+TODO**
+- BERT Model
+- RNN
 
