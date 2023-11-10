@@ -1,5 +1,5 @@
 # Project Overview
-  Text Comprehension, Question and Answering, Generative Text and Sentiment Analysis have all made grade strides throughout the past decade - and progress is only accelerating. Does there exist, though, a model which can predict `sarcasm`? The difficulty in doing so is that we may not be able to do so with current methods as the type and amount of context that is necessary is not accounted for. There are two key indicators of sarcasm:
+  Text Comprehension, Question and Answering, Generative Text and Sentiment Analysis have all made great strides throughout the past decade - and progress is only accelerating. Does there exist, though, a model which can predict `sarcasm`? The difficulty in doing so is that we may not be able to do so with current methods as the type and amount of context that is necessary is not accounted for. There are two key indicators of sarcasm:
   
 1) A shared knowledge between the speaker/writer and listener/reader
    i) eg. It's -30 degrees and windy -> "Beautiful day today, isn't it?"
