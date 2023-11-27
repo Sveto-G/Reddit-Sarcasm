@@ -22,7 +22,7 @@ evenly split by the labels `0` for non-sarcastic and `1` for sarcastic. The labe
 - created_utc: the date and time comment was created
 - parent comment: the comment that preceeded it
 
-**Data can be found** [here](https://www.kaggle.com/datasets/danofer/sarcasm)
+**Data can be found** on Kaggle [here](https://www.kaggle.com/datasets/danofer/sarcasm) and Google Drive [here](https://drive.google.com/file/d/1Idd2QZ8fawKfeUFxmWTNeMsPSUS4XQgo/view?usp=drive_link).
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Project Workflow
@@ -38,20 +38,21 @@ evenly split by the labels `0` for non-sarcastic and `1` for sarcastic. The labe
 - found words associated with sarcasm
 
 ## Preprocessing
+- removed unncessary features, including all non-text columns
 #### Fitting and transforming text data using:
 - Count Vectorizer
 - TF IDF
-- Wod2Vec
+- Word2Vec self-trained
+- Word2Vec pre-trained
 
-TODO**
-some variation of BERT
 
-## Modeling
-- Logistic Regression Count Vectorizer and TFIDF
-- KNN using TFIDF
-- MLP using Word2Vec
+## Models --> Accuracy Score
+- Logistic Regression with Count Vectorizer --> 0.65
+- Logistic Regression with Count TFIDF --> 0.65 
+- KNN using TFIDF --> 0.56
+- MLP using self-trained Word2Vec --> 0.71
+- MLP using Glove-Twitter-200 --> 0.68
+- MLP using Word2Vec Google News --> 0.68
 
-TODO**
-- BERT Model
-- RNN
+** See Requirements.txt for libraries
 
